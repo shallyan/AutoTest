@@ -31,10 +31,10 @@ class File(object):
 
 		with open(self.dstFileName, 'w') as f:
 			#header and function 
-			codeStr = Config.COMPILING_FILE_HEADER + ''.join(self.codeLines)
+			codeStr = Config.COMPILING_FILE_HEADER + '\n' + ''.join(self.codeLines)
 			#test code
 			for testFunc in self.testFuncs:
-				codeStr += testFunc[1]
+				codeStr += '\n' + testFunc[1]
 			#driver
 			codeStr += Config.COMPILING_FILE_DRIVER_PREFIX
 			for testFunc in self.testFuncs:
