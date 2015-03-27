@@ -1,2 +1,2 @@
 # AutoTest
-Generate testing code for C functions.
+Generate testing part for C functions.
